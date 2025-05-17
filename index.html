@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando...</title>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1011268564447542'); // Substitua pelo SEU ID DO PIXEL se diferente
+    fbq('track', 'PageView');
+    fbq('track', 'Purchase', {value: 25.00, currency: 'BRL'});
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1011268564447542&ev=PageView&noscript=1" // Substitua pelo SEU ID DO PIXEL se diferente
+    /></noscript>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+
+    <script type="text/javascript">
+        // Função para redirecionar após um pequeno atraso para garantir que o pixel seja disparado
+        function redirecionar() {
+            setTimeout(function() {
+                window.location.href = "https://bit.ly/3Fgy2h9";
+            }, 500); // Atraso de 500 milissegundos (0.5 segundos)
+        }
+    </script>
+</head>
+<body onload="redirecionar()">
+    <div class="container">
+        <p>Liberando seu acesso ao Código da Lábia...</p>
+    </div>
+</body>
+</html>
